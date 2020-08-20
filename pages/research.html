@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Piraino</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"
+        integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="../index.html">Mark Piraino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="research.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-8 order-md-1 order-sm-2 order-2" style="padding: 3%">
+            <h3>Research</h3>
+
+            <div class="card" style="width: 100%; padding: 2%; border-color:white">
+                <div class="card-body"></div>
+                <section id="thermo">
+                    <h4>Thermodynamic Formalism</h4>
+                    <h5>Summary</h5>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Boltzmann_equation.JPG" class="rounded mx-auto d-block" style="width: 80%">
+                    <p style="font-size: 5pt;"> This image is licensed under a CC-BY-SA-3 license. 
+                        For more information and to find the original go 
+                        <a href="https://commons.wikimedia.org/wiki/File:Boltzmann_equation.JPG">here</a> </p>
+                    <p class="card-text">
+                        When a coin is tossed in the air it flips and rotates based on the laws of motion. 
+                        Although we have a good understanding of these laws it remains infeasible to predict 
+                        if the coin will land heads or tails. Thus we treat the outcome of a coin flip as a random 
+                        event. In every area of science there are complex systems which evolve in time, often even 
+                        though we understand the mechanism of these systems predicting their long term behavior 
+                        remains impossible. The approach taken in ergodic theory is to treat these systems as 
+                        random and attempt to make probabilistic statements about their long term average behavior. 
+                        To make use of the powerful tools of ergodic theory one needs to find an invariant measure. 
+                        However often a system has many different invariant measures each of which describes the long 
+                        term behavior of different initial conditions. Thus if someone is interested in understanding 
+                        particular types of initial conditions then a suitable invariant measure must be constructed 
+                        which ``sees" those initial conditions. The process of constructing these invariant measures 
+                        is called thermodynamic formalism; having its roots in statistical physics thermodynamic 
+                        formalism mimics the physical principle that nature minimizes the free energy. The resulting 
+                        measures are known as equilibirum states.
+                    </p>
+
+                    <p class="card-text"> 
+                        My work in this area has focused on studying equilibirum states which arise 
+                        in multiplicative ergodic theory known as matrix equilibrium states. My work
+                        focuses on the use of transfer operators to understand these equilibirum states.
+                    </p>
+                    <h5>Papers</h5>
+                    <div class="accordion" id="thermo_papers">
+                        <div class="card">
+                            <div class="card-header" id="headingOne" style="padding: 0%;">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseOnethermo" aria-expanded="false" aria-controls="collapseOnethermo">
+                                        The weak Bernoulli property for matrix Gibbs states
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOnethermo" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#thermo_papers">
+                                <div class="card-body">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <b>Reference:</b>
+                                            Mark Piraino, Ergodic Theory and Dynamical Systems Volume 40, Issue 8 August 2020 , pp. 2219-2238
+                                        </li>
+                                        <li>
+                                            <b>Links:</b>
+                                            <a href="https://doi.org/10.1017/etds.2018.129">Journal</a>
+                                            <a href="https://arxiv.org/abs/1806.05253"> ArXiv</a>
+                                        </li>
+                                        <li>
+                                            <b>Abstract:</b>
+                                            We study the ergodic properties of a class of measures on full shits for which the meaure 
+                                            of a cylinder set is approximately the norm of a product of matrices. 
+                                            The measure  is called a matrix Gibbs state. 
+                                            In particular, we give a sufficient condition for a matrix Gibbs state to have 
+                                            the weak Bernoulli property. We employ a number of techniques to understand these
+                                             measures, including a novel approach based on Perron–Frobenius theory. We find 
+                                             that when t is an even integer the ergodic properties of mu(t) are readily deduced 
+                                             from finite-dimensional Perron–Frobenius theory. We then consider an extension 
+                                             of this method to t > 0 using operators on an infinite-dimensional space. 
+                                             Finally, we use a general result of Bradley to prove the main theorem.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card" style="width: 100%; padding: 2%; border-color:white">
+                <div class="card-body"></div>
+                <section id="TO">
+                    <h4>Transfer Operators and Limit Laws for Lyapunov Exponents</h4>
+                    <h5>Summary</h5>
+                    <img src="../images/furstenbergsformula.png" class="rounded mx-auto d-block" style="width: 80%">
+                    <p class="card-text">
+                        For random variables taking values in the real numbers one if often 
+                        interested in the asymptotic properties of sums. Similiarly if we have a 
+                        random variable which takes values in the matrices we would like to 
+                        understand the asymptotics of products. These asymptotics are described
+                        by numbers know as the Lyapunov exponents.
+                    </p>
+                    <p class = "card-text">
+                        I am primarily interested in applying transfer operator techniques 
+                        to understand these lypaunov exponents. 
+                    </p>
+                    <h5>Papers</h5>
+                    <div class="accordion" id="TOpapers">
+                        <div class="card">
+                            <div class="card-header" id="headingOne" style="padding: 0%;">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseOneTO" aria-expanded="false" aria-controls="collapseOneTO">
+                                        Transfer operators and limit laws for typical cocycles
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOneTO" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#TOpapers">
+                                <div class="card-body">
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <b>Reference:</b>
+                                            Kiho Park Mark Piraino, submitted.
+                                        </li>
+                                        <li>
+                                            <b>Links:</b>
+                                            <a href="">Journal</a>
+                                            <a href="https://arxiv.org/abs/2007.02349"> ArXiv</a>
+                                        </li>
+                                        <li>
+                                            <b>Abstract:</b>
+                                            We show that typical cocycles (in the sense of Bonatti and Viana) over 
+                                            irreducible subshifts of finite type obey several limit laws with 
+                                            respect to the unique equilibrium states for Hölder potentials. 
+                                            These include the central limit theorem and the large deviation principle. 
+                                            We also establish the analytic dependence of the top Lyapunov exponent on 
+                                            the underlying equilibrium state. The transfer operator and its spectral 
+                                            properties play key roles in establishing these limit laws.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card" style="width: 100%; padding: 2%; border-color:white">
+                <div class="card-body">
+                    <section id="factors">
+                        <h4>Factors of Gibbs States / Hidden Markov measures</h4>
+                        <h5>Summary</h5>
+                        <img src="../images/HMM.png" class="rounded mx-auto d-block" style="width: 80%">
+                        <p class="card-text">
+                            It is often the case that a random process can not be observed directly
+                            and instead we may only observe some function of it. The most famous example
+                            of this is information being transmitted across a noisey channel. The recipient
+                            recieves not the true random process (the information being transmitted) but
+                            instead some potentially modified version of it.
+                        </p>
+
+                        <p class = "card-text">
+                            When the underlying random process is a Markov Chain the observed process
+                            is known as a hidden Markov chain. In my work I study a generalization of
+                            hidden Markov chains in which is original process is not Markov but still
+                            has very regular conditional probabilities. While it is well known that
+                            a hidden Markov chain can fail to Markov in my work I have shown that larger
+                            classes of processes are closed when the obscuring function is sufficiently nice.
+                        </p>
+                        <h5>Papers</h5>
+                        <div class="accordion" id="factors_papers">
+                            <div class="card">
+                                <div class="card-header" id="headingOne" style="padding: 0%;">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseOnefactors" aria-expanded="false"
+                                            aria-controls="collapseOnefactors">
+                                            Projections of Gibbs States for H&oumllder Potentials
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOnefactors" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#factors_papers">
+                                    <div class="card-body">
+                                        <ul style="list-style: none;">
+                                            <li>
+                                                <b>Reference:</b>
+                                                Piraino, M. Projections of Gibbs States for H&oumlder Potentials. J Stat
+                                                Phys 170, 952–961 (2018). https://doi.org/10.1007/s10955-018-1967-3
+                                            </li>
+                                            <li>
+                                                <b>Links:</b>
+                                                <a href="https://doi.org/10.1007/s10955-018-1967-3">Journal</a>
+                                                <a href="https://arxiv.org/abs/1709.07561"> ArXiv</a>
+                                            </li>
+                                            <li>
+                                                <b>Abstract:</b>
+                                                We give a short proof that the projection of a Gibbs state for a
+                                                H&oumlder continuous potential on a mixing shift of finite type under
+                                                1-block fiber-wise mixing factor map has a H&oumlder continuous g
+                                                function. This improves a number of previous results. The key insight
+                                                in the proof is to realize the measure of a cylinder set in terms of
+                                                positive operators and use cone techniques.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="padding: 0%;">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Single site factors of Gibbs measures
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#factors_papers">
+                                    <div class="card-body">
+                                        <ul style="list-style: none">
+                                            <li>
+                                                <b>Reference:</b>
+                                                Mark Piraino 2020 Nonlinearity 33 742
+                                            </li>
+                                            <li>
+                                                <b>Link:</b>
+                                                <a href="https://doi.org/10.1088/1361-6544/ab5179">Journal</a>
+                                                <a href="https://arxiv.org/abs/1905.03803">ArXiv</a>
+                                            </li>
+                                            <li>
+                                                <b>Abstract:</b>
+                                                It has been an open problem to identify classes of Gibbs measures less
+                                                regular than H&oumlder continuous on the full shift which are closed
+                                                under factor maps. In this article we show that in fact all of the
+                                                classical uniqueness regimes (Bowen, Walters, and H&oumlder) from
+                                                thermodynamic formalism are closed under factor maps between full
+                                                shifts. In
+                                                fact we
+                                                show more generally that the classical uniqueness regimes are closed
+                                                under
+                                                factors between shifts of finite type provided the factor map satisfies
+                                                a
+                                                suitable mixing in fibers condition.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 order-md-2 order-sm-1 order-1" style="padding: 3%">
+            <div class="card" style="width: 97%; padding: 2%; border-color:white">
+                <div class="card-body">
+                    <h5 class="card-title">Projects</h5>
+                    <ul>
+                        <li>
+                            <a href="#thermo">Thermodynamic Formalism</a>
+                        </li>
+                        <li>
+                            <a href="#TO">Transfer Operators and Limit Laws for Lyapunov Exponents</a>
+                        </li>
+
+                        <li>
+                            <a href="#factors">Factors of Gibbs States / Hidden Markov measures</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
